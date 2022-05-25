@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/icon-font.css" />
+  
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
@@ -83,18 +83,24 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vh, 300px"
                 alt=""
+                src="img/nat-1-large.jpg"
                 class="composition__photo composition__photo--p1"
               />
               <img
-                src="img/nat-2-large.jpg"
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vh, 300px"
                 alt=""
+                src="img/nat-2-large.jpg"
                 class="composition__photo composition__photo--p2"
               />
               <img
-                src="img/nat-3-large.jpg"
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vh, 300px"
                 alt=""
+                src="img/nat-3-large.jpg"
                 class="composition__photo composition__photo--p3"
               />
             </div>
@@ -161,7 +167,7 @@
       <section class="section-tours">
         <div class="u-center-text">
           <h2 class="heading-secondary u-margin-bottom-big">
-            Exiting tours for adventurous people
+            Most popular tours
           </h2>
         </div>
         <div class="row">
@@ -358,7 +364,10 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="./img/logo-green-2x.png" alt="" class="footer__logo">
+        <picture class="footer__logo">
+          <source media="(max-width: 37.5em)" srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-small-2x.png 2x ">
+           <img srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x" alt="" >
+        </picture>
       </div>
       <div class="row">
       <div class="col-1-of-2">
